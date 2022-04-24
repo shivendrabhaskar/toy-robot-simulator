@@ -8,7 +8,7 @@ Hey Everyone!!
    <li>User can play with Tammy with the help of this web application.</li>
    <li>User can enter a set of commands and get to know current position of tammy after the comamnds are executed.</li>
 </ul>
-<img  src="https://github.com/shivendrabhaskar/ToyRobotSimulator/blob/master/Robo.png" alt="Robo Guy" width="140" height="200"/>
+<img  src="https://github.com/shivendrabhaskar/toy-robot-simulator/blob/master/Robo.png" alt="Robo Guy" width="140" height="200"/>
 <div>
    <p>
    <h3>Description and rules.</h3>
