@@ -1,0 +1,47 @@
+﻿@model ToyRobotSimulator.Models.ToyCommandModel
+
+@{
+    ViewData["Title"] = "ToyOperator";
+}
+<div>
+<h2 class="display-4 text-center">Toy Operator</h2>
+
+<div  class="text-center">
+        @using (Html.BeginForm("ToyOperator", "Toy"))
+    {
+        
+        @Html.TextAreaFor(model=> model.InputCommand , new {  
+                    placeholder="Place enter your commands here...",
+                    cols="50",
+                    rows="8", })
+                    <br />
+        <input type="submit" value="Submit" />
+
+    }
+</div>
+    <br />
+<div  class=" display-5 text-center">
+    @Html.DisplayFor(model=>model.OutputMessage)
+</div>
+    <br />
+        <br />
+<div>
+    <ul>
+        <li>Please note that the individual commands should be entered in the above text box with each seperate command in a new line.</li>
+        <li>Press Submit button after entering the command text to get the current toy position.</li>
+        <li>The application should be able to read in any one of the following commands:<br />
+            PLACE X,Y,F<br />
+            MOVE<br />
+            LEFT<br />
+            RIGHT<br />
+            REPORT
+        </li>
+
+    </ul>
+    <br />
+
+    <h5 class="text-center">To read complete description click on Home at top or <a href="/Home/Index">click here</a> </h5>
+       
+</div>
+
+</div>
